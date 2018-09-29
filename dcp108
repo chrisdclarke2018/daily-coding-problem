@@ -1,0 +1,23 @@
+"""This problem was asked by Google.
+
+Given two strings A and B, return whether or not A can be shifted some number of times to get B.
+
+For example, if A is abcde and B is cdeab, return true. If A is abc and B is acb, return false.
+This is a suprisingly easy one from Google, so maybe im missing something.....
+
+"""
+
+
+
+def check(str,str2):
+   
+   check = "False"
+   for i in str:
+      x = str[0]
+      z = str[1:]
+      c = z + x
+      str = c
+      if (str==str2):
+         check = "True"
+   print(check)
+   
